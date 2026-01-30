@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Carr Lot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="title">The Carr Lot</div>
+  <div id="datetime"></div>
+  <button id="menuBtn">≡</button>
+</header>
+
+<nav id="menu" class="menu hidden">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="#" id="themeToggle">Toggle Theme</a>
+</nav>
+
+<main class="container">
+
+  <div class="member" data-subdomain="dog.domain.com">
+    <button class="member-header">🐶 Dog</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+  <div class="member" data-subdomain="cat.domain.com">
+    <button class="member-header">🐱 Cat</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+  <div class="member" data-subdomain="jonathan.domain.com">
+    <button class="member-header">Jonathan</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+  <div class="member" data-subdomain="spouse.domain.com">
+    <button class="member-header">Spouse</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+  <div class="member" data-subdomain="member.domain.com">
+    <button class="member-header">Member</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+  <div class="member" data-subdomain="member2.domain.com">
+    <button class="member-header">Member</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+  <div class="member" data-subdomain="baby.domain.com">
+    <button class="member-header">👶 Baby</button>
+    <div class="member-body">
+      <button class="action">Email</button>
+      <button class="action">SMS</button>
+      <button class="visit">Visit Page</button>
+    </div>
+  </div>
+
+</main>
+
+<div id="authModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Family Login</h2>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+
+    <div class="future-auth">
+      <p>Future Options</p>
+      <button disabled>Sign in with Apple</button>
+      <button disabled>Authenticator App</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

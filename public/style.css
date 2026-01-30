@@ -1,0 +1,124 @@
+:root {
+  --bg: #f8f9fa;
+  --text: #111;
+  --card: #ffffff;
+  --accent: #007AFF;
+}
+
+[data-theme="dark"] {
+  --bg: #0d0d0f;
+  --text: #ffffff;
+  --card: #1a1a1d;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background: var(--card);
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  padding: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding: 12px;
+}
+
+.member {
+  background: var(--card);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,.06);
+}
+
+.member-header {
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.member-body {
+  padding: 12px;
+  display: none;
+  gap: 8px;
+}
+
+.member-body button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.action {
+  background: #e9ecef;
+}
+
+.visit {
+  background: var(--accent);
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 340px;
+}
+
+.modal-content input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.future-auth button {
+  width: 100%;
+  margin-top: 6px;
+}
