@@ -5,7 +5,7 @@
   <title>The Carr Lot</title>
   <h1>Carr15 deployed</h1>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
 <header class="topbar">
@@ -15,7 +15,7 @@
 </header>
 
 <nav id="menu" class="menu hidden">
-  <a href="#">Home</a>
+  <a href="/home/" id="homeLink">Home</a>
   <a href="#">About</a>
   <a href="#">Contact</a>
   <a href="#" id="themeToggle">Toggle Theme</a>
@@ -23,7 +23,7 @@
 
 <main class="container">
 
-  <div class="member" data-subdomain="andy.carr15.com">
+  <div class="member" data-profile="/profiles/dog/">
     <button class="member-header">🐶 Dog</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <div class="member" data-subdomain="missy.carr15.com">
+  <div class="member" data-profile="/profiles/cat/">
     <button class="member-header">🐱 Cat</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div class="member" data-subdomain="jonathan.carr15.com">
+  <div class="member" data-profile="/profiles/jonathan/">
     <button class="member-header">Jonathan</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <div class="member" data-subdomain="sarah.carr15.com">
+  <div class="member" data-profile="/profiles/spouse/">
     <button class="member-header">Spouse</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -59,7 +59,7 @@
     </div>
   </div>
 
-  <div class="member" data-subdomain="grace.carr15.com">
+  <div class="member" data-profile="/profiles/member1/">
     <button class="member-header">Member</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <div class="member" data-subdomain="maggie.carr15.com">
+  <div class="member" data-profile="/profiles/member2/">
     <button class="member-header">Member</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -77,7 +77,7 @@
     </div>
   </div>
 
-  <div class="member" data-subdomain="empty.carr15.com">
+  <div class="member" data-profile="/profiles/baby/">
     <button class="member-header">Built for Future</button>
     <div class="member-body">
       <button class="action">Email</button>
@@ -88,21 +88,6 @@
 
 </main>
 
-<div id="authModal" class="modal hidden">
-  <div class="modal-content">
-    <h2>Family Login</h2>
-    <input id="username" placeholder="Username">
-    <input id="password" type="password" placeholder="Password">
-    <button id="loginBtn">Login</button>
-
-    <div class="future-auth">
-      <p>Future Options</p>
-      <button disabled>Sign in with Apple</button>
-      <button disabled>Authenticator App</button>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+<script src="/assets/site.js"></script>
 </body>
 </html>

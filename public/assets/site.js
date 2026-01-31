@@ -3,10 +3,19 @@ const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 const themeToggle = document.getElementById("themeToggle");
 
-const modal = document.getElementById("authModal");
-const loginBtn = document.getElementById("loginBtn");
+const homeLink = document.getElementById("homeLink");
 
-let targetLink = null;
+function isLoggedIn() {
+  return localStorage.getItem("carr15_auth") === "true";
+}
+
+function requireLogin(path) {
+  if (isLoggedIn()) {
+    window.location.href = path;
+  } else {
+    window.location.href = "/login/";
+  }
+}
 
 function updateTime() {
   const now = new Date();
@@ -49,19 +58,14 @@ document.querySelectorAll(".member-header").forEach(btn => {
 
 document.querySelectorAll(".visit").forEach(btn => {
   btn.onclick = e => {
-    targetLink = e.target.closest(".member").dataset.subdomain;
-    modal.classList.remove("hidden");
+    const profilePath = e.target.closest(".member").dataset.profile;
+    requireLogin(profilePath);
   };
 });
 
-loginBtn.onclick = () => {
-  const u = document.getElementById("username").value;
-  const p = document.getElementById("password").value;
-
-  if (u === "family" && p === "carr123") {
-    modal.classList.add("hidden");
-    window.location.href = "https://" + targetLink;
-  } else {
-    alert("Invalid credentials");
-  }
-};
+if (homeLink) {
+  homeLink.addEventListener("click", event => {
+    event.preventDefault();
+    requireLogin("/home/");
+  });
+}
