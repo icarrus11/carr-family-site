@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jonathan | Carr15</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="/home/guard.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="title">Carr15 Profiles</div>
+</header>
+
+<main class="container">
+  <div class="member" style="width: 100%;">
+    <button class="member-header">Jonathan</button>
+    <div class="member-body" style="display: flex;">
+      <p>This is Jonathan's profile.</p>
+      <div style="display: flex; gap: 12px;">
+        <a class="visit" href="/home/">Back to Home</a>
+        <button class="visit" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const logoutBtn = document.getElementById("logoutBtn");
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("carr15_auth");
+    window.location.href = "/";
+  });
+</script>
+</body>
+</html>

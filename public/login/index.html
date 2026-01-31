@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Carr15</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="title">Carr15 Login</div>
+</header>
+
+<main class="container">
+  <div class="member" style="width: 100%;">
+    <div class="member-body" style="display: flex;">
+      <label>
+        Username
+        <input id="username" type="text" placeholder="Username" autocomplete="username" />
+      </label>
+      <label>
+        Password
+        <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+      </label>
+      <button id="loginBtn" class="visit">Login</button>
+      <p id="loginMessage" aria-live="polite"></p>
+    </div>
+  </div>
+</main>
+
+<script>
+  const loginBtn = document.getElementById("loginBtn");
+  const message = document.getElementById("loginMessage");
+
+  function attemptLogin(event) {
+    event.preventDefault();
+    const u = document.getElementById("username").value.trim();
+    const p = document.getElementById("password").value;
+
+    if (u === "jonathan" && p === "carr15") {
+      localStorage.setItem("carr15_auth", "true");
+      window.location.href = "/home/";
+      return;
+    }
+
+    message.textContent = "Login failed";
+  }
+
+  loginBtn.addEventListener("click", attemptLogin);
+</script>
+</body>
+</html>
