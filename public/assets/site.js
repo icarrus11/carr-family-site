@@ -2,6 +2,7 @@ const dateEl = document.getElementById("datetime");
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 const themeToggle = document.getElementById("themeToggle");
+const easterEgg = document.getElementById("easterEgg");
 
 const homeLink = document.getElementById("homeLink");
 
@@ -67,5 +68,24 @@ if (homeLink) {
   homeLink.addEventListener("click", event => {
     event.preventDefault();
     requireLogin("/home/");
+  });
+}
+
+if (easterEgg) {
+  easterEgg.addEventListener("click", () => {
+    const url = "/easter-egg/snake/";
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (isMobile) {
+      window.open(url, "_blank", "noopener");
+      return;
+    }
+    const popup = window.open(
+      url,
+      "snakeGame",
+      "width=800,height=600,menubar=no,toolbar=no,location=no,status=no"
+    );
+    if (!popup) {
+      window.open(url, "_blank", "noopener");
+    }
   });
 }

@@ -1,0 +1,70 @@
+{
+  "chapters": {
+    "poems": {
+      "title": "Poems",
+      "blurb": "Quiet words folded like letters.",
+      "items": [
+        {
+          "id": "poem-1",
+          "title": "Lanterns",
+          "memoryText": "A placeholder stanza, soft like a lullaby.",
+          "imagePath": "/grace/assets/poems/poem-1.svg"
+        },
+        {
+          "id": "poem-2",
+          "title": "Drift",
+          "memoryText": "Another sample poem, kept light for the public prologue.",
+          "imagePath": "/grace/assets/poems/poem-2.svg"
+        }
+      ]
+    },
+    "art": {
+      "title": "Art",
+      "blurb": "Soft sketches and color studies.",
+      "items": [
+        {
+          "id": "art-1",
+          "title": "Sky Wash",
+          "memoryText": "Placeholder watercolor textures for the public view.",
+          "imagePath": "/grace/assets/art/art-1.svg"
+        },
+        {
+          "id": "art-2",
+          "title": "Quiet Bloom",
+          "memoryText": "A sample sketch used as a safe stand-in.",
+          "imagePath": "/grace/assets/art/art-2.svg"
+        }
+      ]
+    },
+    "photos": {
+      "title": "Photos",
+      "blurb": "Polaroid moments on the window.",
+      "items": [
+        {
+          "id": "photo-1",
+          "title": "Soft Morning",
+          "memoryText": "Public placeholder collage tile.",
+          "imagePath": "/grace/assets/art/photo-1.svg"
+        },
+        {
+          "id": "photo-2",
+          "title": "Afternoon Light",
+          "memoryText": "Another placeholder snapshot for the preview.",
+          "imagePath": "/grace/assets/art/photo-2.svg"
+        }
+      ]
+    },
+    "about": {
+      "title": "About Dad",
+      "blurb": "Notes from behind the camera.",
+      "items": [
+        {
+          "id": "about-1",
+          "title": "The Keeper",
+          "memoryText": "Sample copy describing Dad's perspective in a gentle tone.",
+          "imagePath": "/grace/assets/poems/poem-3.svg"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#f5f0e7" />
+  <rect x="30" y="30" width="340" height="200" rx="20" fill="#fff8ee" stroke="#e3d7ca" />
+  <text x="50" y="90" font-family="Georgia, serif" font-size="18" fill="#6b5d52">Dad's Notes</text>
+  <text x="50" y="130" font-family="Georgia, serif" font-size="14" fill="#8b7b6e">placeholder for</text>
+  <text x="50" y="155" font-family="Georgia, serif" font-size="14" fill="#8b7b6e">protected memories</text>
+</svg>

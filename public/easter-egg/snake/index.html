@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Secret Snake</title>
+  <link rel="stylesheet" href="/easter-egg/snake/styles.css" />
+</head>
+<body>
+  <main class="snake-shell">
+    <header>
+      <h1>Snake</h1>
+      <p class="subtitle">Construction orange meets deep green.</p>
+    </header>
+
+    <section class="scoreboard">
+      <div>Score: <span id="score">0</span></div>
+      <button id="startBtn" type="button">Start</button>
+      <button id="restartBtn" type="button" hidden>Restart</button>
+    </section>
+
+    <canvas id="gameCanvas" width="420" height="420" aria-label="Snake game board" role="img"></canvas>
+
+    <section class="controls" aria-label="Mobile controls">
+      <div class="dpad">
+        <button class="control" data-dir="up" aria-label="Move up">▲</button>
+        <div class="dpad-row">
+          <button class="control" data-dir="left" aria-label="Move left">◀</button>
+          <button class="control" data-dir="right" aria-label="Move right">▶</button>
+        </div>
+        <button class="control" data-dir="down" aria-label="Move down">▼</button>
+      </div>
+      <p class="hint">Use arrow keys or WASD. Swipe on the board for mobile.</p>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+
+  <script src="/easter-egg/snake/app.js"></script>
+</body>
+</html>
