@@ -1,0 +1,10 @@
+flowchart TD
+  A[Visitor lands on /grace/] --> B[Answer console locked]
+  B -->|Correct 4 inputs| C[Unlock + shatter/fade]
+  B -->|5+ failed attempts| D[Show gentle hints]
+  C --> E[Reveal chapters panels]
+  C --> F[Enable draggable tiles]
+  F --> G[Phrase detection]
+  G -->|Mapped phrase| H[Trigger action effect]
+  E --> I[Open modal with chapter content]
+  J[Visitor lands on /grace/chapters/] --> E

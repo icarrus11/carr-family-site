@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260">
+  <rect width="360" height="260" fill="#f8f5f0" />
+  <rect x="26" y="26" width="308" height="208" rx="18" fill="#f3ede7" stroke="#e0d8d0" />
+  <path d="M60 180 L140 110 L220 170 L300 90" stroke="#d6c3b8" stroke-width="14" fill="none" stroke-linecap="round" />
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="12" fill="#6f6a63">Afternoon Light</text>
+</svg>

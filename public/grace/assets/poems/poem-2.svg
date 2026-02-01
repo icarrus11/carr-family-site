@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#f7f2ea" />
+  <rect x="24" y="24" width="352" height="212" rx="16" fill="#fef9f1" stroke="#ded2c6" />
+  <text x="44" y="80" font-family="Georgia, serif" font-size="20" fill="#6b5d52">Drift</text>
+  <text x="44" y="120" font-family="Georgia, serif" font-size="14" fill="#8b7b6e">placeholder stanza</text>
+  <text x="44" y="150" font-family="Georgia, serif" font-size="14" fill="#8b7b6e">folded like letters</text>
+</svg>

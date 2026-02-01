@@ -1,0 +1,13 @@
+flowchart LR
+  root[/public/] --> grace[/grace/]
+  grace --> gindex[index.html]
+  grace --> gstyles[styles.css]
+  grace --> gapp[app.js]
+  grace --> gdata[data/public_content.json]
+  grace --> gassets[assets/]
+  gassets --> poems[poems/*.svg]
+  gassets --> art[art/*.svg]
+  grace --> chapters[/chapters/]
+  chapters --> cindex[index.html]
+  chapters --> cdata[data/private_content.json]
+  grace --> diagrams[diagrams/*.mmd]
