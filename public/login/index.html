@@ -36,7 +36,7 @@
     event.preventDefault();
     const u = document.getElementById("username").value.trim();
     const p = document.getElementById("password").value;
-
+// Teaching login only — replaced by Cloudflare Access later
     if (u === "jonathan" && p === "carr15") {
       localStorage.setItem("carr15_auth", "true");
       window.location.href = "/home/";
